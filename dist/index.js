@@ -13487,9 +13487,7 @@ exports.textTemplate = [
     { target: 'actor', replace: github.context.actor },
     { target: 'actor-url', replace: `https://github.com/${github.context.actor}` },
     { target: 'actor-link', replace: `[${github.context.actor}](https://github.com/${github.context.actor})` },
-    { target: 'avatar-url', replace: `${process.env.avatar_url}` },
-    { target: 'run-number-link', replace: `none` }
-    //{ target: 'run-number-link', replace: `[#${github.context.runNumber}](${(_b = (_a = github.context.payload) === null || _a === void 0 ? void 0 : _a.repository) === null || _b === void 0 ? void 0 : _b.html_url}/actions/runs/${github.context.runId})` }
+    { target: 'avatar-url', replace: `${process.env.avatar_url}` }
 ];
 function replaceTextByTemplates(str) {
     exports.textTemplate.map(el => {

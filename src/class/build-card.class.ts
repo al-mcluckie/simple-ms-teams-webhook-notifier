@@ -35,7 +35,7 @@ export class BuildCard {
     setSections(sections: string): void {
         if (sections !== '') {
             const sectionsObject: any = YAML.parse(this.replaceTemplates(sections), {
-                indent: this.identNumber
+                // indent: this.identNumber
             });
 
             this.card["sections"] = sectionsObject;
@@ -45,7 +45,7 @@ export class BuildCard {
     setPotentialAction(potentialAction: string): void {
         if (potentialAction !== '') {
             const potentialActionObject: any = YAML.parse(potentialAction, {
-                indent: this.identNumber
+                // indent: this.identNumber
             });
     
             this.card["potentialAction"] = potentialActionObject;

@@ -18,8 +18,8 @@ async function run() {
   let webhook_url = '';
   try {
     webhook_url = core.getInput('webhook_url', { required: true });
-  } catch(err) {
-    return core.setFailed(err);
+  } catch (err) {
+      return core.setFailed((err as Error).message);
   }
   const summary = core.getInput('summary');
   const title = core.getInput('title');

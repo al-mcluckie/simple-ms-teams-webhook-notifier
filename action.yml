@@ -1,6 +1,6 @@
 name: 'Simple MS Teams Webhook notifier'
 description: 'simple typescript template for building GitHub Actions'
-author: 'LuisGhz'
+author: 'al-mcluckie'
 inputs:
   webhook_url:
     description: Webhook url
@@ -38,7 +38,7 @@ inputs:
     required: false
     default: 'false'
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'dist/index.js'
 branding:
   color: "blue"
